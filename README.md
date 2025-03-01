@@ -134,3 +134,7 @@ Implement a GUI for selecting cities dynamically.
 Support multiple cities for comparison.
 
 Store historical weather data for trend analysis.
+
+OUTPUT
+![Image](https://github.com/user-attachments/assets/790e032c-bf8a-4236-a595-ab472a373088)
+![Image](https://github.com/user-attachments/assets/c5d24684-ef1b-4773-b7bd-4108f4e654a9)
