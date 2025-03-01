@@ -49,12 +49,6 @@ pip install requests pandas matplotlib
 
 Setup Instructions
 
-Clone the Repository
-
-git clone https://github.com/your-username/weather-forecast-visualization.git
-cd weather-forecast-visualization
-
-
 Obtain an API Key
 
 Sign up at OpenWeatherMap and generate an API key.
