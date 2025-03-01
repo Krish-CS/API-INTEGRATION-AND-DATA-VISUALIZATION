@@ -1,26 +1,26 @@
 # API-INTEGRATION-AND-DATA-VISUALIZATION
 
-"COMPANY": CODTECH IT SOLUTIONS
+**"COMPANY":** CODTECH IT SOLUTIONS
 
-"NAME": KRISHKANTH K
+**"NAME":** KRISHKANTH K
 
-"INTERN ID": CT08TUV
+**"INTERN ID":** CT08TUV
 
-"DOMAIN": PYTHON PROGRAMMING
+**"DOMAIN":** PYTHON PROGRAMMING
 
-"DURATION": 4 WEEKS
+**"DURATION":** 4 WEEKS
 
-"MENTOR": NEELA SANTOSH
+**"MENTOR":** NEELA SANTOSH
 
 
 
-Weather Forecast Visualization
+**Weather Forecast Visualization**
 
-Introduction
+**Introduction**
 
 This project fetches and visualizes weather forecast data using the OpenWeatherMap API. It allows users to analyze temperature and humidity trends for a specified city over a forecast period. The data is processed and visualized using Pandas and Matplotlib.
 
-Features
+**Features**
 
 Fetches weather forecast data from OpenWeatherMap.
 
@@ -35,19 +35,19 @@ Creates a bar chart representing humidity levels.
 Displays raw weather data in a tabular format for reference.
 
 
-Prerequisites
+**Prerequisites**
 
 Before running this script, ensure you have the following installed:
 
 Python 3.x
 
 
-Required Python libraries:
+**Required Python libraries:**
 
 pip install requests pandas matplotlib
 
 
-Setup Instructions
+**Setup Instructions**
 
 Obtain an API Key
 
@@ -75,7 +75,7 @@ response = requests.get(URL)
 data = response.json()
 
 
-Processing Data
+**Processing Data**
 
 The JSON response is converted into a structured Pandas DataFrame, extracting relevant fields such as date, temperature, and humidity.
 
@@ -86,7 +86,7 @@ df = pd.DataFrame([{
 } for item in data["list"]])
 
 
-Data Visualization
+**Data Visualization**
 
 The script generates two visualizations:
 
@@ -98,34 +98,15 @@ plt.plot(df["Date"], df["Temperature"], marker="o", linestyle="-")
 plt.bar(df["Date"], df["Humidity"], color="skyblue")
 
 
-Displaying Raw Data
+**Displaying Raw Data**
 
 The processed DataFrame is printed in tabular format for reference.
 
 print(df)
 
 
-Example Output
 
-After running the script, you will see:
-
-Temperature Trend Plot: A visual representation of how temperature fluctuates over time.
-
-Humidity Levels Chart: A bar chart depicting humidity variations.
-
-Raw Weather Data: A table displaying structured weather data.
-
-
-Troubleshooting
-
-If you receive an error regarding API authentication, ensure that you have correctly set your API key.
-
-If the script fails to fetch data, verify that the specified city name is valid.
-
-Ensure you have an active internet connection.
-
-
-Future Enhancements
+**Future Enhancements**
 
 Add interactive visualizations using Plotly.
 
@@ -135,6 +116,6 @@ Support multiple cities for comparison.
 
 Store historical weather data for trend analysis.
 
-OUTPUT
+**OUTPUT**
 ![Image](https://github.com/user-attachments/assets/790e032c-bf8a-4236-a595-ab472a373088)
 ![Image](https://github.com/user-attachments/assets/c5d24684-ef1b-4773-b7bd-4108f4e654a9)
