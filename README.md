@@ -32,15 +32,18 @@ Creates a bar chart representing humidity levels.
 
 Displays raw weather data in a tabular format for reference.
 
+
 Prerequisites
 
 Before running this script, ensure you have the following installed:
 
 Python 3.x
 
+
 Required Python libraries:
 
 pip install requests pandas matplotlib
+
 
 Setup Instructions
 
@@ -48,6 +51,7 @@ Clone the Repository
 
 git clone https://github.com/your-username/weather-forecast-visualization.git
 cd weather-forecast-visualization
+
 
 Obtain an API Key
 
@@ -59,9 +63,11 @@ Modify City Name (Optional)
 
 By default, the script fetches weather data for India. Modify the CITY variable to specify a different location.
 
+
 Run the Script
 
 python weather_visualization.py
+
 
 Code Breakdown
 
@@ -72,6 +78,7 @@ The script sends a request to the OpenWeatherMap API and retrieves weather forec
 response = requests.get(URL)
 data = response.json()
 
+
 Processing Data
 
 The JSON response is converted into a structured Pandas DataFrame, extracting relevant fields such as date, temperature, and humidity.
@@ -81,6 +88,7 @@ df = pd.DataFrame([{
     "Temperature": item["main"]["temp"],
     "Humidity": item["main"]["humidity"]
 } for item in data["list"]])
+
 
 Data Visualization
 
@@ -93,11 +101,13 @@ Humidity Levels: A bar chart displaying humidity levels for the forecasted perio
 plt.plot(df["Date"], df["Temperature"], marker="o", linestyle="-")
 plt.bar(df["Date"], df["Humidity"], color="skyblue")
 
+
 Displaying Raw Data
 
 The processed DataFrame is printed in tabular format for reference.
 
 print(df)
+
 
 Example Output
 
@@ -109,6 +119,7 @@ Humidity Levels Chart: A bar chart depicting humidity variations.
 
 Raw Weather Data: A table displaying structured weather data.
 
+
 Troubleshooting
 
 If you receive an error regarding API authentication, ensure that you have correctly set your API key.
@@ -116,6 +127,7 @@ If you receive an error regarding API authentication, ensure that you have corre
 If the script fails to fetch data, verify that the specified city name is valid.
 
 Ensure you have an active internet connection.
+
 
 Future Enhancements
 
@@ -126,6 +138,3 @@ Implement a GUI for selecting cities dynamically.
 Support multiple cities for comparison.
 
 Store historical weather data for trend analysis.
-
-
-
